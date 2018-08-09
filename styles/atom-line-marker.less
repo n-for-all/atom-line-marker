@@ -9,7 +9,9 @@
 }
 
 atom-text-editor::shadow .gutter .line-number.atom-marked {
-    background-color: rgb(255, 13, 13);
+    background-color: #057eff;
+    color: #ffffff;
+
     .icon-right {
         visibility: visible;
         color: #fff;
@@ -19,4 +21,63 @@ atom-text-editor::shadow .gutter .line-number.atom-marked {
             color: #fff;
         }
     }
+}
+.atom-line-marker-status {
+    line-height: 1;
+    display: inline-block;
+    padding: 0 0 0 5px;
+    margin: 0 5px;
+    border-radius: 3px;
+    .alm-count {
+        display: inline-block;
+        margin-right: 2px;
+        line-height: 20px;
+        vertical-align: middle;
+        text-align: center;
+        padding: 0 5px;
+    }
+    .alm-count,
+    .alm-next,
+    .alm-previous {
+        background: rgba(5, 126, 255, 0.43);
+    }
+    .alm-next {
+        margin-left: 2px;
+    }
+}
+.alm-next,
+.alm-previous {
+    padding: 0px 5px;
+    display: inline-block;
+    span.icon {
+        vertical-align: middle;
+        line-height: 1;
+        display: inline-block;
+        text-align: center;
+    }
+    &:hover {
+        background-color: #000000;
+    }
+}
+.alm-next .icon:before,
+.alm-previous .icon:before {
+    font-family: "Octicons Regular";
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 14px;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    font-size: 20px;
+    width: 15px;
+    height: 20px;
+    position: relative;
+    top: 1px;
+    margin-right: 0px;
+}
+.alm-next .icon:before {
+    content: @arrow-small-down;
+}
+.alm-previous .icon:before {
+    content: @arrow-small-up;
 }

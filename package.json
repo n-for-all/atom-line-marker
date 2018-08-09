@@ -1,18 +1,20 @@
 {
-  "name": "atom-line-marker",
-  "main": "./lib/atom-line-marker",
-  "version": "0.0.0",
-  "description": "A short description of your package",
-  "keywords": [
-  ],
-  "activationCommands": {
-    "atom-workspace": "atom-line-marker:toggle"
-  },
-  "repository": "https://github.com/atom/atom-line-marker",
-  "license": "MIT",
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
-  },
-  "dependencies": {
-  }
+    "name": "atom-line-marker",
+    "main": "./lib/atom-line-marker",
+    "version": "1.0.0",
+    "description": "Mark lines",
+    "keywords": [],
+    "repository": "https://github.com/atom/atom-line-marker",
+    "license": "MIT",
+    "engines": {
+        "atom": ">=1.0.0 <2.0.0"
+    },
+    "consumedServices": {
+        "status-bar": {
+            "versions": {
+                "^1.0.0": "consumeStatusBar"
+            }
+        }
+    },
+    "dependencies": {}
 }
