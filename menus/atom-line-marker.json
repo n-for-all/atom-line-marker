@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle atom-line-marker",
+        "command": "atom-line-marker:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "atom-line-marker",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "atom-line-marker:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+@import "octicon-utf-codes.less";
+
+.atom-line-marker {
+}
+
+atom-text-editor::shadow .gutter .line-number.atom-marked {
+    background-color: rgb(255, 13, 13);
+    .icon-right {
+        visibility: visible;
+        color: #fff;
+
+        &:before {
+            content: @pin;
+            color: #fff;
+        }
+    }
+}
