@@ -59,6 +59,35 @@ atom-text-editor::shadow .gutter .line-number.atom-marked {
         background-color: #000000;
     }
 }
+.alm-modal {
+    .alm-input {
+        width: 100%;
+        font-size: 13px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: @text-color;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 3px;
+        padding: 2px;
+        min-height: 50px;
+    }
+    .alm-actionbar {
+        text-align: right;
+        margin-top:10px;
+        .btn {
+            margin-left: 5px;
+            &.left {
+                float: left;
+                margin-left: 0;
+                margin-right: 5px;
+            }
+        }
+    }
+    .btn-secondary {
+        color: #fff;
+        background-color: transparent;
+        background-image: -webkit-linear-gradient(#00cc95, #00b30b);
+    }
+}
 .alm-next .icon:before,
 .alm-previous .icon:before {
     font-family: "Octicons Regular";
